@@ -19,6 +19,20 @@ class DefaultController extends Controller
         ));
     }
 
+    public function methContact()
+    {
+        $message = 'Bienvenue sur contact';
+        $this->render('app.default.frontpage',array(
+            'message' => $message,
+        ));
+    }
+    public function methTry()
+    {
+        $message = 'Just to try !!!';
+        $this->render('app.default.frontpage',array(
+            'message' => $message,
+        ));
+    }
     /**
      *
      */
