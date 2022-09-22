@@ -1,8 +1,9 @@
 <h2>liste des abonnées</h2>
+<p><a href="<?= $view->path('add') ?>">Ajouter un abonné</a></p>
 <p>Nombre d'abonnées :
     <?= $count ?>
 </p>
-<section class="abonne">
+<section class=" abonne">
     <table>
         <?php foreach ($abonnes as $abonne) { ?>
         <thead>
