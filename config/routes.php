@@ -2,6 +2,9 @@
 
 $routes = array(
     array('home','default','index'),
-    array('contact','default','methContact'),
-    array('try','default','methTry')
+    array('liste','abonne','listing'),
+    array('detail','abonne','show',['id']),
+    array('edit','abonne','edit',['id']),
+    array('delete','abonne','delete',['id']),
+    array('add','abonne','add')
 );
