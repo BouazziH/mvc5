@@ -50,14 +50,14 @@ class AbonneController extends Controller
         $form = new Form($errors);
         $this->render('app.abonne.add',['form' => $form]);
     }
- public function delete($id)
- {
-    $abonne = $this->isAbonneExistor404($id);
-    AbonneModel::delete($id);
-    $this->redirect(('liste'));
-    
- }
-
+ 
+    public function delete($id)
+    {
+       $abonne = $this->isAbonneExistor404($id);
+       AbonneModel::delete($id);
+       $this->redirect(('liste'));
+       
+    }
  public function edit($id)
  {
      $abonne = $this->isAbonneExistOr404($id);
